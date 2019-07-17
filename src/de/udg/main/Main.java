@@ -10,6 +10,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class Main extends JavaPlugin {
@@ -51,7 +52,7 @@ public class Main extends JavaPlugin {
 
 	//Temporäre void bis wir datenbank klassen haben lul
 	private MinecraftSystem loadSystem() {
-		return new MinecraftSystem(loadKitsFromDatabase());
+		return new MinecraftSystem(new HashMap<Player, SystemPlayerController>(), loadKitsFromDatabase());
 	}
 
 	private ArrayList<KitController> loadKitsFromDatabase() {

@@ -15,7 +15,7 @@ import java.util.HashMap;
 @Setter
 public class MinecraftSystem {
 
-	private HashMap<Player, SystemPlayerController> systemPlayerControllerHashMap = new HashMap<Player, SystemPlayerController>();
+	private HashMap<Player, SystemPlayerController> systemPlayerControllerHashMap;
 	private ArrayList<KitController> kits;
 
 }
