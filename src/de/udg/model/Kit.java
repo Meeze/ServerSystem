@@ -10,12 +10,10 @@ import org.bukkit.inventory.ItemStack;
 @Setter
 public class Kit {
 
-
 	private String name;
 	private ItemStack[] content;
 	private int cooldown;
 	private long price;
 	private ItemStack icon;
-
 
 }
